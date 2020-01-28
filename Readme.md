@@ -7,6 +7,10 @@ _Graph of [Pug (template engine)](https://github.com/pugjs/pug)._
 
 ## Usage
 
+Install [Graphviz](https://graphviz.gitlab.io/download/) and add the bin directory in your PATH.
+
+Then add this package to your project:
+
     npm i -D lerna-dependency-graph
 
 Add a script entry in your package.json:
@@ -20,6 +24,10 @@ Add a script entry in your package.json:
 Execute:
 
     npm run graph [-- options]
+
+You could also give it a try without installing it:
+
+    npx lerna-dependency-graph [options]
 
 ## Options
 
