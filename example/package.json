@@ -1,0 +1,11 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "graph": "lerna-dependency-graph"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "lerna-dependency-graph": "file:.."
+  }
+}

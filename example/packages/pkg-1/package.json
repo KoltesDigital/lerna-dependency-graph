@@ -1,0 +1,8 @@
+{
+  "name": "pkg-1",
+  "version": "1.0.0",
+  "dependencies": {
+    "pkg-2": "^1.0.0",
+    "foobar": "^1.0.0"
+  }
+}

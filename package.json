@@ -1,0 +1,52 @@
+{
+  "name": "lerna-dependency-graph",
+  "version": "1.0.0",
+  "author": "Jonathan Giroux <giroux.jo@gmail.com>",
+  "license": "MIT",
+  "description": "Outputs dependencies in a Lerna monorepo using Graphviz.",
+  "keywords": [
+    "graphviz",
+    "lerna",
+    "monorepo"
+  ],
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "bin": {
+    "lerna-dependency-graph": "./lib/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch --preserveWatchOutput"
+  },
+  "dependencies": {
+    "@lerna/project": "^3.18.0",
+    "graphviz": "0.0.9",
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/graphviz": "0.0.30",
+    "@types/yargs": "^15.0.2",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.3",
+    "prettier": "^1.19.1",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.1.0",
+    "typescript": "^3.7.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{json,md,yml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts}": [
+      "tslint --fix",
+      "git add"
+    ]
+  }
+}
