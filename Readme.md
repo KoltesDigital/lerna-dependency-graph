@@ -2,7 +2,7 @@
 
 Outputs dependencies in a Lerna monorepo using Graphviz.
 
-![pug](pug.png)  
+![pug](https://raw.githubusercontent.com/KoltesDigital/lerna-dependency-graph/master/pug.png)  
 _Graph of [Pug (template engine)](https://github.com/pugjs/pug)._
 
 ## Usage
