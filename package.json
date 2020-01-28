@@ -1,6 +1,6 @@
 {
   "name": "lerna-dependency-graph",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Jonathan Giroux <giroux.jo@gmail.com>",
   "license": "MIT",
   "description": "Outputs dependencies in a Lerna monorepo using Graphviz.",
