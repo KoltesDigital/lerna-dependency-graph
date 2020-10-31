@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "author": "Jonathan Giroux <giroux.jo@gmail.com>",
   "license": "MIT",
+  "repository": "KoltesDigital/lerna-dependency-graph",
   "description": "Outputs dependencies in a Lerna monorepo using Graphviz.",
   "keywords": [
     "graphviz",
