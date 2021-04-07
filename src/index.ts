@@ -37,7 +37,7 @@ const argv = yargs
 getPackages().then((packages) => {
 	const g = graphviz.digraph('G');
 
-	g.use = argv.graphvizCommand;
+	g.use = argv.graphvizCommand as any;
 
 	if (argv.graphvizDirectory) {
 		g.setGraphVizPath(argv.graphvizDirectory);
